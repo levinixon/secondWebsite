@@ -151,7 +151,6 @@
     <!-- Page wrapper-->
     <main class="page-wrapper">
       <!-- Navbar. Remove 'fixed-top' class to make the navigation bar scrollable with the page-->
-      <!-- Navbar. Remove 'fixed-top' class to make the navigation bar scrollable with the page-->
       <header class="navbar navbar-expand-lg fixed-top navbar-ignore-dark-mode ignore-dark-mode">
         <div class="container"><a class="navbar-brand pe-sm-3" href="#"><span class="text-primary flex-shrink-0 me-2">
               <svg version="1.1" width="15" height="32" viewBox="0 0 36 33" xmlns="http://www.w3.org/2000/svg">
@@ -162,13 +161,13 @@
               </li>
               <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">Portfolio</a>
                 <ul class="dropdown-menu">
-                  <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">HTML/CSS</a>
+                  <li class=""><a class="dropdown-item" href="https://loogle.vercel.app">Loogle</a>
                   </li>
-                  <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Javascript</a>
+                  <li class=""><a class="dropdown-item" href="https://letflix-mu.vercel.app/">Letflix</a>
                   </li>
-                  <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Python</a>
+                  <li class=""><a class="dropdown-item" href="https://lotify.vercel.app/">Lotify</a>
                   </li>
-                  <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">C++</a>
+                  <li class=""><a class="dropdown-item" href="https://rollmodelmentoring.com/">Roll Models</a>
                   </li>
                 </ul>
               </li>
@@ -208,7 +207,8 @@
               </div>
               <div class="col-lg-5 col-xl-4 offset-lg-1 offset-xxl-2 d-flex flex-column pt-2 pt-md-4">
                 <p class="fs-xl text-center text-lg-start pb-2 pb-md-0 mb-4 mb-md-5">I help people and organisations reach their full potential with technology.</p>
-                <div class="d-flex flex-column flex-sm-row align-items-center justify-content-center justify-content-lg-start pb-3 pb-sm-5"><a class="btn btn-lg btn-primary rounded-pill w-100 w-sm-auto me-sm-3 me-xl-4 mb-2 mb-sm-0" href="#">Get in touch</a><a class="btn btn-lg btn-link text-white w-100 w-sm-auto px-2" href="#">View Portfolio<i class="ai-arrow-right ms-2"></i></a></div>
+                <div class="d-flex flex-column flex-sm-row align-items-center justify-content-center justify-content-lg-start pb-3 pb-sm-5"><a class="btn btn-lg btn-primary rounded-pill w-100 w-sm-auto me-sm-3 me-xl-4 mb-2 mb-sm-0" href="">Get in touch</a>
+                  <a class="btn btn-lg btn-link text-white w-100 w-sm-auto px-2" href="portfolio.html">View Portfolio<i class="ai-arrow-right ms-2"></i></a></div>
                 <ul class="list-inline d-xl-flex text-center text-lg-start mt-auto mb-0 mb-sm-2">
                   <li class="d-inline-flex align-items-center text-nowrap pt-1 me-4"><i class="ai-check-alt text-primary fs-xl me-2"></i>All contracts considered</li>
                   <li class="d-inline-flex align-items-center text-nowrap pt-1"><i class="ai-check-alt text-primary fs-xl me-2"></i>Flexible work terms</li>
@@ -402,8 +402,9 @@
               <div class="bg-info rounded-5 position-absolute top-0 start-0 w-100 h-100" data-aos="zoom-in" data-aos-duration="600" data-aos-offset="250"></div><img class="d-block position-relative zindex-2 mx-auto" src="assets/img/portfolio/list/06.png" width="636" alt="Image" data-aos="fade-in" data-aos-duration="400" data-aos-offset="250"></a></div>
           <div class="col-md-5 col-xl-4 offset-lg-1" data-aos="fade-up" data-aos-duration="400" data-aos-offset="170">
             <div class="ps-md-3 ps-lg-0">
-              <h2 class="h4">Development of something</h2>
-              <p class="fs-sm pb-3 pb-lg-4 mb-3">I haven't actually developed anything for anyone yet, but when I do, this is where I'm going to put it.</p><a class="btn btn-sm btn-outline-dark rounded-pill" href="">Find out more here</a>
+              <h2 class="h4">Hi there!</h2>
+              <p class="fs-sm pb-3 pb-lg-4 mb-3">I've been busy scurrying away in the background building apps until someone hires me. Take a look at what I've been up to by hitting the button below.</p>
+              <a class="btn btn-sm btn-outline-dark rounded-pill" href="portfolio.html">Find out more here</a>
               </div>
             </div>
           </div>
@@ -416,20 +417,20 @@
               <h2 class="h1">Wanna build something?</h2>
               <p class="pb-1 pb-md-0 mb-4 mb-md-5">Whether it's testing of an application, or producing your products website. Get in touch and see if I can help.</p>
               <h3 class="mb-4">Send your request!</h3>
-              <form class="needs-validation row g-4" novalidate>
+              <form class="needs-validation row g-4" id="contactForm" action="connect.php" method="post">
                 <div class="col-lg-10">
                   <label class="form-label fs-base" for="name">Name</label>
-                  <input class="form-control form-control-lg" type="text" placeholder="Your name" required id="name">
+                  <input class="form-control form-control-lg" type="text" placeholder="Your name" required id="name" id="name" name="name">
                   <div class="invalid-feedback">Please enter your name!</div>
                 </div>
                 <div class="col-lg-10">
                   <label class="form-label fs-base" for="email">Email</label>
-                  <input class="form-control form-control-lg" type="email" placeholder="Email address" required id="email">
+                  <input class="form-control form-control-lg" type="email" placeholder="Email address" required id="email" id="email" name="email">
                   <div class="invalid-feedback">Please provide a valid email address!</div>
                 </div>
                 <div class="col-lg-10">
                   <label class="form-label fs-base" for="message">Message</label>
-                  <textarea class="form-control form-control-lg" placeholder="Your message" rows="4" required id="message"></textarea>
+                  <textarea class="form-control form-control-lg" placeholder="Your message" rows="4" required id="message" id="message" name="message"></textarea>
                   <div class="invalid-feedback">Please write your message!</div>
                 </div>
                 <div class="col-lg-10">
@@ -492,53 +493,23 @@
         </div>
       </section>
     </main>
-    <footer class="footer bg-secondary pt-4 pb-2 pb-md-5 pt-sm-5">
-      <div class="container-fluid pb-1 pb-md-0 px-md-5">
-        <div class="dark-mode bg-dark rounded-5 position-relative overflow-hidden w-100 py-5 px-3 px-sm-4 px-xl-5 mx-auto" style="max-width: 1660px;">
-          <div class="position-absolute top-50 start-50 translate-middle" style="width: 1664px;"><img src="assets/img/landing/web-studio/footer-wave.png" alt="Wave"></div>
-          <div class="container position-relative zindex-2 pt-md-3 pt-lg-4 pt-xl-5 pb-2">
-            <div class="row pb-2">
-              <div class="col-lg-4 col-xxl-3 pb-2 pb-lg-0 mb-4 mb-lg-0">
-                <div class="navbar-brand text-light py-0 me-0 pb-1 mb-3"><span class="text-primary flex-shrink-0 me-2">
-                      <path fill="currentColor" d="M35.6,29c-1.1,3.4-5.4,4.4-7.9,1.9c-2.3-2.2-6.1-3.7-9.4-3.7c-3.1,0-7.5,1.8-10,4.1c-2.2,2-5.8,1.5-7.3-1.1c-1-1.8-1.2-4.1,0-6.2l0.6-1.1l0,0c0.6-0.7,4.4-5.2,12.5-5.7c0.5,1.8,2,3.1,3.9,3.1c2.2,0,4.1-1.9,4.1-4.2s-1.8-4.2-4.1-4.2c-2,0-3.6,1.4-4,3.3H7.7c-0.8,0-1.3-0.9-0.9-1.6l5.6-9.8c2.5-4.5,8.8-4.5,11.3,0L35.1,24C36,25.7,36.1,27.5,35.6,29z"></path>
-                    </div>
-                <p class="fs-sm mb-4">Not quite sure yet? Subscribe to this newsletter and I'll email you with all the latest projects I'm working on!</p>
-                <div class="input-group input-group-sm rounded-pill">
-                  <input class="form-control" type="text" placeholder="Email address">
-                  <button class="btn btn-primary rounded-pill" type="button">Subscribe</button>
-                </div>
-              </div>
-              <div class="col-sm-4 col-lg-2 offset-lg-1 offset-xl-2 offset-xxl-3 mb-4 mb-sm-0">
-                <h6 class="fw-bold"></h6>
-                <ul class="nav flex-column fs-sm">
-                  <li class="nav-item"><a class="nav-link fw-normal px-0 py-1" href="#"></a></li>
-                  <li class="nav-item"><a class="nav-link fw-normal px-0 py-1" href="#"></a></li>
-                  <li class="nav-item"><a class="nav-link fw-normal px-0 py-1" href="#"></a></li>
-                  <li class="nav-item"><a class="nav-link fw-normal px-0 py-1" href="#"></a></li>
-                </ul>
-              </div>
-              <div class="col-sm-4 col-lg-2 mb-4 mb-sm-0">
-                <h6 class="fw-bold"></h6>
-                <ul class="nav flex-column fs-sm">
-                  <li class="nav-item"><a class="nav-link fw-normal px-0 py-1" href="#"></a></li>
-                  <li class="nav-item"><a class="nav-link fw-normal px-0 py-1" href="#"></a></li>
-                  <li class="nav-item"><a class="nav-link fw-normal px-0 py-1" href="#"></a></li>
-                  <li class="nav-item"><a class="nav-link fw-normal px-0 py-1" href="#"></a></li>
-                </ul>
-              </div>
-              <div class="col-sm-4 col-lg-3 col-xl-2">
-                <h6 class="fw-bold">Contact</h6>
-                <ul class="nav flex-column fs-sm">
-                  <li class="nav-item"><a class="nav-link fw-normal px-0 py-1" href="mailto:levinixon12@gmail.com">levinixon12@gmail.com</a></li>
-                  <li class="nav-item"><a class="nav-link fw-normal px-0 py-1" href="tel:+447311798737">+ 44 7311 798 737</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="d-sm-flex align-items-center justify-content-between pt-4 pt-md-5 mt-2 mt-md-0 mt-lg-2 mt-xl-4">
-              <div class="d-flex justify-content-center order-sm-2 me-md-n2"><a class="btn btn-icon btn-sm btn-secondary btn-instagram rounded-circle mx-2" href="#"><i class="ai-instagram"></i></a><a class="btn btn-icon btn-sm btn-secondary btn-facebook rounded-circle mx-2" href="#"><i class="ai-facebook"></i></a><a class="btn btn-icon btn-sm btn-secondary btn-linkedin rounded-circle mx-2" href="#"><i class="ai-linkedin"></i></a></div>
-              <p class="fs-sm order-sm-1 text-center text-sm-start pt-4 pt-sm-0 mb-0 me-4"><span class="opacity-70">&copy; All rights reserved. Made by Levi Nixon - 2022.</span></p>
-            </div>
-          </div>
+    <!-- Footer-->
+    <footer class="footer bg-secondary py-5">
+      <div class="container pt-1 pt-sm-2 pt-md-3 pt-lg-4 pt-xl-5">
+        <div class="border-bottom text-center pb-4"><a class="navbar-brand d-inline-flex text-nav py-0 mb-3 mb-md-4" href="index.html"><span class="text-primary flex-shrink-0 me-2">
+                <path fill="currentColor" d="M35.6,29c-1.1,3.4-5.4,4.4-7.9,1.9c-2.3-2.2-6.1-3.7-9.4-3.7c-3.1,0-7.5,1.8-10,4.1c-2.2,2-5.8,1.5-7.3-1.1c-1-1.8-1.2-4.1,0-6.2l0.6-1.1l0,0c0.6-0.7,4.4-5.2,12.5-5.7c0.5,1.8,2,3.1,3.9,3.1c2.2,0,4.1-1.9,4.1-4.2s-1.8-4.2-4.1-4.2c-2,0-3.6,1.4-4,3.3H7.7c-0.8,0-1.3-0.9-0.9-1.6l5.6-9.8c2.5-4.5,8.8-4.5,11.3,0L35.1,24C36,25.7,36.1,27.5,35.6,29z"></path>
+              </svg></span><span>Thanks for checking in</span></a>
+          <ul class="nav justify-content-center py-1 pb-sm-2">
+            <li class="nav-item"><a class="nav-link py-2 px-3 mx-1" href="#">Home</a></li>
+            <li class="nav-item"><a class="nav-link py-2 px-3 mx-1" href="#">About</a></li>
+            <li class="nav-item"><a class="nav-link py-2 px-3 mx-1" href="#">Portfolio</a></li>
+            <li class="nav-item"><a class="nav-link py-2 px-3 mx-1" href="#">Services</a></li>
+            <li class="nav-item"><a class="nav-link py-2 px-3 mx-1" href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="d-sm-flex align-items-center justify-content-between pt-4 mt-2 mt-sm-0">
+          <div class="d-flex justify-content-center order-sm-2 mb-4 mb-sm-0"><a class="btn btn-icon btn-sm btn-secondary btn-instagram rounded-circle me-3" href="#"><i class="ai-instagram"></i></a><a class="btn btn-icon btn-sm btn-secondary btn-facebook rounded-circle me-3" href="#"><i class="ai-facebook"></i></a><a class="btn btn-icon btn-sm btn-secondary btn-youtube rounded-circle" href="#"><i class="ai-youtube"></i></a></div>
+          <p class="fs-sm order-sm-1 text-center mb-0"><span class="opacity-70">&copy; All rights reserved. Made by </span><a class="nav-link d-inline fw-normal p-0" href="#" target="_blank" rel="noopener">Levi Nixon</a></p>
         </div>
       </div>
     </footer>
@@ -555,5 +526,8 @@
     <script src="assets/vendor/aos/dist/aos.js"></script>
     <!-- Main theme script-->
     <script src="assets/js/theme.min.js"></script>
+      <!-- Firebase Script-->
+      <script type="module" src="firebase.js">
+      </script>
   </body>
 </html>
